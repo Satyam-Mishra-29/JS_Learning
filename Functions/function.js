@@ -52,3 +52,28 @@ function loginUsermessage(username){
     return `${username} just logged In`;
 }
 console.log(loginUsermessage(""));
+
+// function using rest operator
+function calculateCartPrice(val1,val2,...num1){
+    console.log(val1,val2);
+    return num1
+}
+console.log( calculateCartPrice(200,300,500,20000));
+
+// Object Passing in function
+const user = {
+    product: "Mobile Cover",
+    price : 200
+}
+
+function handleObject(AnyObject){
+console.log(`USername is ${AnyObject.product} and and price is ${AnyObject.price}`);
+}
+handleObject(user);
+
+// Array passing in function
+const newArray = [200,400,100,600]
+function returnSecondValue(getArray){
+    return getArray[1];
+}
+console.log(returnSecondValue(newArray));
