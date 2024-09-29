@@ -1,0 +1,32 @@
+// ========================= Loops ==========================================
+// for (let index = 0; index <= 10; index++) {
+//     const element = index;
+//     if (element == 5) {
+//         console.log(`The Number is ${element}`);
+//     }
+//     console.log(element); 
+// }
+
+// ============== Table Printing Using for loop ===============================//
+// for (let i = 1; i <= 10; i++) {
+//     for (let j = 1; j <= 10; j++) {
+//        console.log(`${i} X ${j} = ${i*j}`);   
+//     } 
+// }
+
+// break  ---> It is used to break the Control flow
+//  Continue ---> It Ignore the One Iteration...AfterWards, The loop we will be continue 
+
+// While Loop --> used when only condition is given
+let index = 0;
+while (index <= 10) {
+    console.log(`Value of Index ${index}`);
+   index = index + 2;
+}
+
+// Do While Loop --> used when necessary Statement should be run
+let score = 1;
+do {
+    console.log(`Score is ${score}`);
+    score++;
+} while (score <= 10);
