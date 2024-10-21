@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div class="bg-black">
+        <h1>DOM learning has been started</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, quisquam.</p>
+
+        <div class="parent" style="border: 2px solid black;">
+            <div class="day">Monday</div>
+            <div class="day">Tuesday</div>
+            <div class="day">Wednesday</div>
+            <div class="day">Thursday</div>
+        </div>
+    </div>
+    <script>
+     const parent =   document.querySelector('.parent')
+     console.log(parent);
+     console.log(parent.children);
+     console.log(parent.children[1]);
+
+     for(let i = 0 ; i < parent.children.length; i++){
+        console.log(parent.children[i].innerHTML);
+     }
+
+     parent.children[1].style.color="orange"
+
+     console.log(parent.firstElementChild);
+     console.log(parent.firstElementChild);
+
+    //  Traversing of Elements 
+     const dayOne = document.querySelector('.day')
+     console.log(dayOne);
+     console.log(dayOne.parentElement);
+     console.log(dayOne.nextElementSibling);
+     console.log("Nodes :", parent.childNodes);
+    </script>
+</body>
+</html>
